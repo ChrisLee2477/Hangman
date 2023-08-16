@@ -1,5 +1,8 @@
 import { useState } from "react";
 import words from "./wordList.json";
+import HangmanDrawing from "./hangmanDrawing";
+import HangmanWord from "./hangmanWord";
+import Keyboard from "./keyboard";
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
