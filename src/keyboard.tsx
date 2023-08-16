@@ -27,5 +27,17 @@ const KEYS = [
   "z",
 ];
 export default function Keyboard() {
-  return <div>keyboard</div>;
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
+        gap: ".5rem",
+      }}
+    >
+      {KEYS.map((key) => {
+        return <button key={key}>{key}</button>;
+      })}
+    </div>
+  );
 }
